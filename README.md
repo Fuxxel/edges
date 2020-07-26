@@ -21,14 +21,14 @@ The following example steps outline how an edge creation problem can be evaluate
 ```
 .
 ├── my_method
-|   ├── predictions
-|       ├── train
-|       ├── val
-|       ├── test
-|   ├── ground_truth
-|       ├── train
-|       ├── val
-|       ├── test
+    ├── predictions
+    |   ├── train
+    |   ├── val
+    |   └── test
+    └── ground_truth
+        ├── train
+        ├── val
+        └── test
 ```
 3. Find the best parameters for alpha, beta and gamma by evaluating the validation set. This is achieved by first running ```post_processing_gwps.py```, ```post_processing_2d.py``` and ```post_processing_3d.py``` on the validation set predictions for different threshold values ```-t``` (corresponds to parameter alpha). 
 ```gwps```, ```2d```, ```3d``` in filenames correspond to parameter beta.
