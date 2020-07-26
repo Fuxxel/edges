@@ -29,8 +29,8 @@ The following example steps outline how an edge creation problem can be evaluate
 |       ├── val
 |       ├── test
 ```
-3. Find the best parameters for alpha, beta and gamma by evaluating the validation set. This is achieved by first running ```post_processing_gwps.py```, ```post_processing_2d.py``` and ```post_processing_3d.py``` on the validation set predictions for different threshold values ```-t``` (corresponds to alpha). 
-```gwps```, ```2d```, ```3d``` in filenames correspond to beta.
+3. Find the best parameters for alpha, beta and gamma by evaluating the validation set. This is achieved by first running ```post_processing_gwps.py```, ```post_processing_2d.py``` and ```post_processing_3d.py``` on the validation set predictions for different threshold values ```-t``` (corresponds to parameter alpha). 
+```gwps```, ```2d```, ```3d``` in filenames correspond to parameter beta.
 ```
 python post_processing_gwps.py -i my_method/predictions/val -o parameter_search/gwps/val -t 0
 ...
@@ -45,7 +45,7 @@ python post_processing_3d.py -i my_method/predictions/val -o parameter_search/3d
 python post_processing_3d.py -i my_method/predictions/val -o parameter_search/3d/val -t 250
 ``` 
 
-4. Prune the post-processed images by running ```prune.py``` for different values for ```-p``` (corresponds to gamma).
+4. Prune the post-processed images by running ```prune.py``` for different values for ```-p``` (corresponds to parameter gamma).
 ``` 
 python prune.py -i parameter_search/gwps/val/t_0 -o parameter_search/gwps_pruned/val/t_0 -p 0
 ...
@@ -78,7 +78,7 @@ parameter_search/gwps_results/val/overview.csv
 parameter_search/2d_results/val/overview.csv
 parameter_search/3d_results/val/overview.csv
 ```
-These csv files have the following columns: alpha,gamma,SDE. Compare the best SDE value from each of the ```overview.csv``` files to determine the best method (beta parameter). In the aggregated folder (see step 6) of the best method find the file ```t_{value}__p_{value}``` for detailed results regarding IoU-Box, mean, median and std. deviation.
+These csv files have the following columns: alpha,gamma,SDE. Compare the best SDE value from each of the ```overview.csv``` files to determine the best method (parameter beta). In the ```{method}_aggregated``` folder (see step 6) of the best method find the ```t_{value}__p_{value}.txt``` file for detailed results regarding IoU-Box, mean, median and std. deviation.
 
 8. Start again from step 2 and use the best parameters for alpha, beta and gamma on the test set.
 
