@@ -13,6 +13,7 @@ The following example steps outline how an edge creation problem can be evaluate
 1. Requirements
 - Python 3
   - OpenCV
+  - scipy
   - scikit-image
   - Pandas
 
