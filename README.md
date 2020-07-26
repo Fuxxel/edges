@@ -64,13 +64,13 @@ python evaluate.py -i parameter_search/3d_pruned/val -o parameter_search/3d_eval
 6. The raw ```.csv``` evaluation files need to be processed further to determine the final metrics by running ```aggregate_evaluations.py``` and ```evaluate_aggregations.py``` on each method. Use parameter ```-n``` to set the number of subjects that evaluated the ground truth data (for details see step 5).
 ```
 python aggregate_evaluations.py -i parameter_search/gwps_eval/val -o parameter_search/gwps_aggregated/val
-python evaluate_aggregations.py -i parameter_search/gwps_aggregated/val -o parameter_search/gwps_results/val
+python evaluate_aggregations.py -i parameter_search/gwps_aggregated/val -o parameter_search/gwps_results/val --name GWPS
 
 python aggregate_evaluations.py -i parameter_search/2d_eval/val -o parameter_search/2d_aggregated/val
-python evaluate_aggregations.py -i parameter_search/2d_aggregated/val -o parameter_search/2d_results/val
+python evaluate_aggregations.py -i parameter_search/2d_aggregated/val -o parameter_search/2d_results/val --name 2D
 
 python aggregate_evaluations.py -i parameter_search/3d_eval/val -o parameter_search/3d_aggregated/val
-python evaluate_aggregations.py -i parameter_search/3d_aggregated/val -o parameter_search/3d_results/val
+python evaluate_aggregations.py -i parameter_search/3d_aggregated/val -o parameter_search/3d_results/val --name 3D
 ```
 
 7. Find the final results for the evaluation metrics for each method in:
