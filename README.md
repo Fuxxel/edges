@@ -20,7 +20,7 @@ The following example steps outline how an edge creation problem can be evaluate
 2. Put the non post-processed boundary predictions and the ground truth edges into seperate folders. The ground truth data can be in the form of images or ```.mat``` files following the [BSDS 500](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html) structure. Boundary predictions should be images. For both the predictions and the ground truth a 0 indicates background; otherwise the pixel contributes to a boundary or edge.
 ```
 .
-├── my_method
+└── my_method
     ├── predictions
     |   ├── train
     |   ├── val
