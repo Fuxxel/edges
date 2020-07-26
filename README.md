@@ -86,7 +86,8 @@ These csv files have the following columns: alpha,gamma,SDE. Compare the best SD
 ### Custom parameter search granularity
 
 Currently all scripts are build to process the parameter search granularity as described in the paper. To use a custom granularity find the following lines and change the parameter values for the variable ts (corresponds to thresholding, i.e. alpha) and ps (corresponds to pruning, i.e. gamma).
-In ```evaluate.py``` at line 115 and 116:
+
+In ```evaluate.py``` at line 114 and 115:
 ```
 ts = [x for x in range(0, 255) if x % 10 == 0]
 ps = [x for x in range(11)] + [x for x in range(20, 101) if x % 10 == 0]
