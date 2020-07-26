@@ -64,7 +64,7 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
 
 	parser.add_argument("-i", "--input", type=str, help="Top level folder of aggregated results in .txt files.")
-	parser.add_argument("-n", "--name", type=str, help="Name of the edge creation method (phi).")
+	parser.add_argument("--name", type=str, help="Name of the edge creation method (phi).")
 	parser.add_argument("-o", "--output", type=str, help="Destination folder for plots and results.")
 
 	args = parser.parse_args()
