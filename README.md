@@ -1,4 +1,4 @@
-# Introducing computational strategies to improve edge creation from predicted object boundaries
+# A thinning algorithm and computational strategies to improve the post-processing of edges
 
 This repository contains the code and evaluation results for the paper: ...
 If you adapt, remix, transform, or build upon the material, please cite the published paper.
