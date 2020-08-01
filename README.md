@@ -6,7 +6,7 @@ If you adapt, remix, transform, or build upon the material, please cite the publ
 ## Edge detection pipeline
 ![](https://github.com/Fuxxel/edges/blob/master/figures/pipeline.png)
 
-Edge detection pipeline. The pipeline is split into five parts: 
+The pipeline is split into five parts: 
 - (a) <img src="https://render.githubusercontent.com/render/math?math=S">, the set of input images in RGB color space, 
 - (b) the function <img src="https://render.githubusercontent.com/render/math?math=A"> that takes <img src="https://render.githubusercontent.com/render/math?math=S"> as input and produces a boundary image set <img src="https://render.githubusercontent.com/render/math?math=G">, 
 - (c) the output of <img src="https://render.githubusercontent.com/render/math?math=A"> as gray scale images, 
