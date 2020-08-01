@@ -3,6 +3,16 @@
 This repository contains the code and evaluation results for the paper: ...
 If you adapt, remix, transform, or build upon the material, please cite the published paper.
 
+## Edge detection pipeline
+![](https://github.com/Fuxxel/edges/blob/master/figures/pipeline.png)
+
+Edge detection pipeline. The pipeline is split into five parts: 
+- (a) <img src="https://render.githubusercontent.com/render/math?math=S">, the set of input images in RGB color space, 
+- (b) the function <img src="https://render.githubusercontent.com/render/math?math=A"> that takes <img src="https://render.githubusercontent.com/render/math?math=S"> as input and produces a boundary image set <img src="https://render.githubusercontent.com/render/math?math=G">, 
+- (c) the output of <img src="https://render.githubusercontent.com/render/math?math=A"> as gray scale images, 
+- (d) the edge extraction function <img src="https://render.githubusercontent.com/render/math?math=E"> with parameters <img src="https://render.githubusercontent.com/render/math?math=\{\alpha, \beta, \gamma\}"> that converts boundaries into edges, 
+- (e) the output <img src="https://render.githubusercontent.com/render/math?math=O"> of the function <img src="https://render.githubusercontent.com/render/math?math=E">, the set of binary images containing thin edges.
+
 ## Evaluation results from the paper
 
 All evaluations that were referenced in the paper are available as raw ```.csv``` and ```.txt``` files in ```paper_evaluations/ ```.
