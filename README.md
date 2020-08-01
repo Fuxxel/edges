@@ -1,4 +1,4 @@
-# A thinning algorithm and computational strategies to improve the post-processing of edges
+# A skeletonize algorithm and a combinatorial optimization toimprove edge quality
 
 This repository contains the code and evaluation results for the paper: ...
 If you adapt, remix, transform, or build upon the material, please cite the published paper.
