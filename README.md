@@ -1,4 +1,4 @@
-# A skeletonize algorithm and a combinatorial optimization toimprove edge quality
+# A skeletonize algorithm and a combinatorial optimization to improve edge quality
 
 This repository contains the code and evaluation results for the paper: ...
 If you adapt, remix, transform, or build upon the material, please cite the published paper.
