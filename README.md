@@ -1,7 +1,26 @@
 # Towards improving edge quality using combinatorial optimization and a novel skeletonize algorithm
 
-This repository contains the code and evaluation results for the paper: ...
-If you adapt, remix, transform, or build upon the material, please cite the published paper.
+This repository contains the code and evaluation results for the paper: "Towards improving edge quality using combinatorial optimization and a novel skeletonize algorithm."
+
+If you adapt, remix, transform, or build upon the material, please cite the published paper: Arnold, M., Speidel, S. & Hattab, G. Towards improving edge quality using combinatorial optimization and a novel skeletonize algorithm. BMC Med Imaging 21, 119 (2021). https://doi.org/10.1186/s12880-021-00650-z
+
+```
+@Article{Arnold2021,
+  author={Arnold, Marvin and Speidel, Stefanie and Hattab, Georges},
+  title={Towards improving edge quality using combinatorial optimization and a novel skeletonize algorithm},
+  journal={BMC Medical Imaging},
+  year={2021},
+  month={Aug},
+  day={05},
+  volume={21},
+  number={1},
+  pages={119},
+  issn={1471-2342},
+  doi={10.1186/s12880-021-00650-z},
+  url={https://doi.org/10.1186/s12880-021-00650-z}
+}
+```
+
 
 ## Edge detection pipeline
 ![](https://github.com/Fuxxel/edges/blob/master/figures/pipeline.png)
